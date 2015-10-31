@@ -1,6 +1,6 @@
 <?php
 
-namespace DougSisk\CountryState;
+namespace TarekAdam\CountryState;
 
 use Illuminate\Support\Facades\Facade;
 
