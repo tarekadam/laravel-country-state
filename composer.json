@@ -1,18 +1,19 @@
 {
-    "name": "dougsisk/laravel-country-state",
+    "name": "tarekadam/laravel-country-state",
     "description": "Country & state helper for Laravel 5.",
     "keywords": ["countries","country","laravel","state","states"],
-    "homepage": "https://github.com/DougSisk/laravel-country-state",
+    "homepage": "https://github.com/tarekadam/laravel-country-state",
     "license": "MIT",
     "authors": [
         {
             "name": "Doug Sisk",
             "homepage": "http://dougsisk.com"
+        },
+        {
+            "name": "Tarek Adam",
+            "homepage": "http://tarekadam.com"
         }
     ],
-    "support": {
-        "issues": "https://github.com/DougSisk/laravel-country-state/issues"
-    },
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "~5.0",
@@ -20,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DougSisk\\CountryState\\": "src/"
+            "TarekAdam\\CountryState\\": "src/"
         }
     },
     "extra": {
