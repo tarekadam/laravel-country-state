@@ -1,6 +1,6 @@
 <?php
 
-namespace TarekAdam\CountryState;
+namespace DougSisk\CountryState;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
@@ -14,7 +14,7 @@ class CountryStateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('CountryState', 'TarekAdam\CountryState\CountryStateServiceProvider');
+        $this->app->singleton('CountryState', 'DougSisk\CountryState\CountryStateServiceProvider');
         $this->mergeConfigFrom(__DIR__ . '/config/countrystate.php', 'countrystate');
     }
 
@@ -28,7 +28,7 @@ class CountryStateServiceProvider extends ServiceProvider
         ]);
 
         $routeConfig = [
-            'namespace' => 'TarekAdam\CountryState',
+            'namespace' => 'DougSisk\CountryState',
             'prefix' => $this->app['config']->get('countrystate.routePrefix'),
         ];
 
@@ -42,7 +42,7 @@ class CountryStateServiceProvider extends ServiceProvider
             ]);
         });
 
-        AliasLoader::getInstance()->alias('CountryState', 'TarekAdam\CountryState\CountryStateFacade');
+        AliasLoader::getInstance()->alias('CountryState', 'DougSisk\CountryState\CountryStateFacade');
     }
 
     /**

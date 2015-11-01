@@ -1,6 +1,6 @@
 <?php
 
-namespace TarekAdam\CountryState;
+namespace DougSisk\CountryState;
 
 use Phine\Country\Loader\Loader;
 
